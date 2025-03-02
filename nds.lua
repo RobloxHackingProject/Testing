@@ -85,7 +85,7 @@ end)
 exploittab:Button('Remove Ads', function()
 	game:GetService("Workspace").BillboardAd:Destroy()
 	game:GetService("Workspace")["Main Portal Template "]:Destroy()
-	game:GetService("Workspace").ReturnPortal:Destroy()
+	game:GetService("Workspace").ForwardPortal:Destroy()
 end)
 
 
