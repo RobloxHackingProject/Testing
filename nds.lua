@@ -43,9 +43,6 @@ exploittab:Toggle('Solid Island', function(bool)
 	end
 end)
 
-exploittab:Label('Next Map = ' .. game.Players.LocalPlayer.PlayerGui.MainGui.NextMapPage.Title.Text
-end)
-
 exploittab:Toggle('Autofarm', function(bool)
 	if bool then
 		event = runService.RenderStepped:Connect(function()
