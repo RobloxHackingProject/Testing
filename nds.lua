@@ -63,7 +63,7 @@ exploittab:Button('Launch Rocket', function()
 end)
 
 exploittab:Button('Say Current Disaster', function()
-	game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(game.Players.LocalPlayer.Character.SurvivalTag.Value, "All")
+	game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync(game.Players.LocalPlayer.Character.SurvivalTag.Value)
 end)
 
 exploittab:Slider('WalkSpeed', 16, 16, 50, function(a)
