@@ -44,7 +44,6 @@ exploittab:Toggle('Solid Island', function(bool)
 end)
 
 exploittab:Toggle('Autofarm', function(bool)
-	local oldPos
 	if bool then
 		oldPos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 		event = runService.RenderStepped:Connect(function()
