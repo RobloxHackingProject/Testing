@@ -24,8 +24,9 @@ local credits = win:Tab('Credits')
 
 --ExploitTab
 exploittab:Button('Drop Trucks Contents', function()
-    game.Workspace.Trucks.Truck2.LeverBounds.ClickDetector.Detector:FireServer()
-	game.Workspace.Trucks.Truck1.LeverBounds.ClickDetector.Detector:FireServer()
+    for _,v in workspace.Trucks:GetChildren() do
+        v:WaitForChild("LeverBounds"):WaitForChild("ClickDetector"):WaitForChild("Detector"):FireServer()
+    end
 end)
 
 exploittab:Button('Remove Job Buttons', function()
