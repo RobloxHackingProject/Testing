@@ -46,7 +46,7 @@ end)
 exploittab:Toggle('Autofarm', function(bool)
 	if bool then
 		event = runService.RenderStepped:Connect(function()
-			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-264, 195, 288)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-278, 159, 342)
 		end)
 	else
 		event:Disconnect()
