@@ -44,13 +44,15 @@ exploittab:Toggle('Solid Island', function(bool)
 end)
 
 exploittab:Toggle('Autofarm', function(bool)
+	local oldPos
 	if bool then
+		oldPos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 		event = runService.RenderStepped:Connect(function()
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-278, 159, 342)
 		end)
 	else
 		event:Disconnect()
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-264, 196, 288)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = oldPos
 	end
 end)
 
