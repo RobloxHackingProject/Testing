@@ -87,7 +87,7 @@ teleporttab:Button('Spawn', function()
 end)
 
 teleporttab:Button('Cashier', function()
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(49, 5, 82)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(41, 3, 81)
 end)
 
 teleporttab:Button('Cook', function()
