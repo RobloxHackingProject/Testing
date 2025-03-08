@@ -50,6 +50,7 @@ exploittab:Toggle('Autofarm', function(bool)
 		end)
 	else
 		event:Disconnect()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-264, 196, 288)
 	end
 end)
 
